@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Keyspace", "Keyspace.vcxproj", "{71C21FF8-1C74-4835-BBEC-45E40EF9C561}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KeyspaceClientTest", "KeyspaceClientTest.vcxproj", "{37F4BC82-1B56-40B2-B474-D2021EFC0E3E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KeyspaceClientLib", "KeyspaceClientLib.vcxproj", "{B1077A72-AA0E-49DA-861A-A337FF61AB90}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KeyspaceClientCSharpDLL", "KeyspaceClientCSharpDLL.vcxproj", "{A4D4012D-0DC1-4BA6-8A1B-E0732D989EF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71C21FF8-1C74-4835-BBEC-45E40EF9C561}.Debug|Win32.ActiveCfg = Debug|Win32
+		{71C21FF8-1C74-4835-BBEC-45E40EF9C561}.Debug|Win32.Build.0 = Debug|Win32
+		{71C21FF8-1C74-4835-BBEC-45E40EF9C561}.Release|Win32.ActiveCfg = Release|Win32
+		{71C21FF8-1C74-4835-BBEC-45E40EF9C561}.Release|Win32.Build.0 = Release|Win32
+		{37F4BC82-1B56-40B2-B474-D2021EFC0E3E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{37F4BC82-1B56-40B2-B474-D2021EFC0E3E}.Debug|Win32.Build.0 = Debug|Win32
+		{37F4BC82-1B56-40B2-B474-D2021EFC0E3E}.Release|Win32.ActiveCfg = Release|Win32
+		{37F4BC82-1B56-40B2-B474-D2021EFC0E3E}.Release|Win32.Build.0 = Release|Win32
+		{B1077A72-AA0E-49DA-861A-A337FF61AB90}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B1077A72-AA0E-49DA-861A-A337FF61AB90}.Debug|Win32.Build.0 = Debug|Win32
+		{B1077A72-AA0E-49DA-861A-A337FF61AB90}.Release|Win32.ActiveCfg = Release|Win32
+		{B1077A72-AA0E-49DA-861A-A337FF61AB90}.Release|Win32.Build.0 = Release|Win32
+		{A4D4012D-0DC1-4BA6-8A1B-E0732D989EF0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A4D4012D-0DC1-4BA6-8A1B-E0732D989EF0}.Debug|Win32.Build.0 = Debug|Win32
+		{A4D4012D-0DC1-4BA6-8A1B-E0732D989EF0}.Release|Win32.ActiveCfg = Release|Win32
+		{A4D4012D-0DC1-4BA6-8A1B-E0732D989EF0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

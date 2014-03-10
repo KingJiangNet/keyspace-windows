@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{71C21FF8-1C74-4835-BBEC-45E40EF9C561}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\Build\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\Build\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</LinkIncremental>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\windows-refs\include;$(IncludePath)</IncludePath>
+    <ReferencePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(VCInstallDir)atlmfc\lib;$(VCInstallDir)lib</ReferencePath>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\windows-refs\bin;$(ExecutablePath)</ExecutablePath>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\windows-refs\bin;$(ExecutablePath)</ExecutablePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\windows-refs\include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\windows-refs\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\windows-refs\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../src;../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_DEPRECATE;PLATFORM_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libdb48.lib;ws2_32.lib;mswsock.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)-Debug.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>../src;../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;_CRT_SECURE_NO_DEPRECATE;PLATFORM_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libdb48.lib;ws2_32.lib;mswsock.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y "..\windows-refs\bin\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Main.cpp" />
+    <ClCompile Include="..\src\Application\Keyspace\Catchup\CatchupMsg.cpp" />
+    <ClCompile Include="..\src\Application\Keyspace\Catchup\CatchupReader.cpp" />
+    <ClCompile Include="..\src\Application\Keyspace\Catchup\CatchupServer.cpp" />
+    <ClCompile Include="..\src\Application\Keyspace\Catchup\CatchupWriter.cpp" />
+    <ClCompile Include="..\src\Application\Keyspace\Database\AsyncListVisitor.cpp" />
+    <ClCompile Include="..\src\Application\Keyspace\Database\KeyspaceMsg.cpp" />
+    <ClCompile Include="..\src\Application\Keyspace\Database\ReplicatedKeyspaceDB.cpp" />
+    <ClCompile Include="..\src\Application\Keyspace\Database\SingleKeyspaceDB.cpp" />
+    <ClCompile Include="..\src\Application\Keyspace\Database\SyncListVisitor.cpp" />
+    <ClCompile Include="..\src\Application\Keyspace\Protocol\HTTP\HttpApiHandler.cpp" />
+    <ClCompile Include="..\src\Application\Keyspace\Protocol\HTTP\HttpKeyspaceHandler.cpp" />
+    <ClCompile Include="..\src\Application\Keyspace\Protocol\HTTP\HttpKeyspaceSession.cpp" />
+    <ClCompile Include="..\src\Application\Keyspace\Protocol\Keyspace\KeyspaceClientReq.cpp" />
+    <ClCompile Include="..\src\Application\Keyspace\Protocol\Keyspace\KeyspaceClientResp.cpp" />
+    <ClCompile Include="..\src\Application\Keyspace\Protocol\Keyspace\KeyspaceConn.cpp" />
+    <ClCompile Include="..\src\Application\Keyspace\Protocol\Keyspace\KeyspaceServer.cpp" />
+    <ClCompile Include="..\src\Application\HTTP\HttpConn.cpp" />
+    <ClCompile Include="..\src\Application\HTTP\HttpFileHandler.cpp" />
+    <ClCompile Include="..\src\Application\HTTP\HttpRequest.cpp" />
+    <ClCompile Include="..\src\Application\HTTP\HttpServer.cpp" />
+    <ClCompile Include="..\src\Application\HTTP\IMF.cpp" />
+    <ClCompile Include="..\src\Application\HTTP\JSONSession.cpp" />
+    <ClCompile Include="..\src\Application\HTTP\Mime.cpp" />
+    <ClCompile Include="..\src\Application\HTTP\UrlParam.cpp" />
+    <ClCompile Include="..\src\Framework\AsyncDatabase\AsyncDatabase.cpp" />
+    <ClCompile Include="..\src\Framework\AsyncDatabase\MultiDatabaseOp.cpp" />
+    <ClCompile Include="..\src\Framework\Database\Cursor.cpp" />
+    <ClCompile Include="..\src\Framework\Database\Database.cpp" />
+    <ClCompile Include="..\src\Framework\Database\Table.cpp" />
+    <ClCompile Include="..\src\Framework\Database\Transaction.cpp" />
+    <ClCompile Include="..\src\Framework\PaxosLease\PaxosLease.cpp" />
+    <ClCompile Include="..\src\Framework\PaxosLease\PLeaseAcceptor.cpp" />
+    <ClCompile Include="..\src\Framework\PaxosLease\PLeaseLearner.cpp" />
+    <ClCompile Include="..\src\Framework\PaxosLease\PLeaseMsg.cpp" />
+    <ClCompile Include="..\src\Framework\PaxosLease\PLeaseProposer.cpp" />
+    <ClCompile Include="..\src\Framework\ReplicatedLog\LogCache.cpp" />
+    <ClCompile Include="..\src\Framework\ReplicatedLog\LogQueue.cpp" />
+    <ClCompile Include="..\src\Framework\ReplicatedLog\ReplicatedConfig.cpp" />
+    <ClCompile Include="..\src\Framework\ReplicatedLog\ReplicatedLog.cpp" />
+    <ClCompile Include="..\src\Framework\ReplicatedLog\ReplicatedLogMsg.cpp" />
+    <ClCompile Include="..\src\Framework\Transport\TCPServer.cpp" />
+    <ClCompile Include="..\src\Framework\Transport\TransportTCPReader.cpp" />
+    <ClCompile Include="..\src\Framework\Transport\TransportTCPWriter.cpp" />
+    <ClCompile Include="..\src\Framework\Transport\TransportUDPReader.cpp" />
+    <ClCompile Include="..\src\Framework\Transport\TransportUDPWriter.cpp" />
+    <ClCompile Include="..\src\Framework\Paxos\PaxosAcceptor.cpp" />
+    <ClCompile Include="..\src\Framework\Paxos\PaxosLearner.cpp" />
+    <ClCompile Include="..\src\Framework\Paxos\PaxosMsg.cpp" />
+    <ClCompile Include="..\src\Framework\Paxos\PaxosProposer.cpp" />
+    <ClCompile Include="..\src\System\Common.cpp" />
+    <ClCompile Include="..\src\System\Config.cpp" />
+    <ClCompile Include="..\src\System\Log.cpp" />
+    <ClCompile Include="..\src\System\Platform.cpp" />
+    <ClCompile Include="..\src\System\ThreadPool_Posix.cpp" />
+    <ClCompile Include="..\src\System\ThreadPool_Windows.cpp" />
+    <ClCompile Include="..\src\System\Time_Posix.cpp" />
+    <ClCompile Include="..\src\System\Time_Windows.cpp" />
+    <ClCompile Include="..\src\System\Events\EventLoop.cpp" />
+    <ClCompile Include="..\src\System\Events\Scheduler.cpp" />
+    <ClCompile Include="..\src\System\IO\Endpoint.cpp" />
+    <ClCompile Include="..\src\System\IO\IOProcessor_Darwin.cpp" />
+    <ClCompile Include="..\src\System\IO\IOProcessor_Linux.cpp" />
+    <ClCompile Include="..\src\System\IO\IOProcessor_Windows.cpp" />
+    <ClCompile Include="..\src\System\IO\Socket_Posix.cpp" />
+    <ClCompile Include="..\src\System\IO\Socket_Windows.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Version.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Catchup\CatchupMsg.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Catchup\CatchupReader.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Catchup\CatchupServer.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Catchup\CatchupWriter.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Database\AsyncListVisitor.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Database\KeyspaceConsts.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Database\KeyspaceDB.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Database\KeyspaceMsg.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Database\KeyspaceService.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Database\ReplicatedKeyspaceDB.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Database\SingleKeyspaceDB.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Database\SyncListVisitor.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Protocol\ProtocolServer.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Protocol\HTTP\HttpApiHandler.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Protocol\HTTP\HttpKeyspaceHandler.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Protocol\HTTP\HttpKeyspaceSession.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Protocol\Keyspace\KeyspaceClientReq.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Protocol\Keyspace\KeyspaceClientResp.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Protocol\Keyspace\KeyspaceConn.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Protocol\Keyspace\KeyspaceServer.h" />
+    <ClInclude Include="..\src\Application\HTTP\HttpConn.h" />
+    <ClInclude Include="..\src\Application\HTTP\HttpConsts.h" />
+    <ClInclude Include="..\src\Application\HTTP\HttpFileHandler.h" />
+    <ClInclude Include="..\src\Application\HTTP\HttpRequest.h" />
+    <ClInclude Include="..\src\Application\HTTP\HttpServer.h" />
+    <ClInclude Include="..\src\Application\HTTP\IMF.h" />
+    <ClInclude Include="..\src\Application\HTTP\JSONSession.h" />
+    <ClInclude Include="..\src\Application\HTTP\Mime.h" />
+    <ClInclude Include="..\src\Application\HTTP\UrlParam.h" />
+    <ClInclude Include="..\src\Framework\AsyncDatabase\AsyncDatabase.h" />
+    <ClInclude Include="..\src\Framework\AsyncDatabase\MultiDatabaseOp.h" />
+    <ClInclude Include="..\src\Framework\Database\Cursor.h" />
+    <ClInclude Include="..\src\Framework\Database\Database.h" />
+    <ClInclude Include="..\src\Framework\Database\DatabaseConfig.h" />
+    <ClInclude Include="..\src\Framework\Database\Table.h" />
+    <ClInclude Include="..\src\Framework\Database\Transaction.h" />
+    <ClInclude Include="..\src\Framework\PaxosLease\PaxosLease.h" />
+    <ClInclude Include="..\src\Framework\PaxosLease\PLeaseAcceptor.h" />
+    <ClInclude Include="..\src\Framework\PaxosLease\PLeaseConsts.h" />
+    <ClInclude Include="..\src\Framework\PaxosLease\PLeaseLearner.h" />
+    <ClInclude Include="..\src\Framework\PaxosLease\PLeaseMsg.h" />
+    <ClInclude Include="..\src\Framework\PaxosLease\PLeaseProposer.h" />
+    <ClInclude Include="..\src\Framework\PaxosLease\PLeaseState.h" />
+    <ClInclude Include="..\src\Framework\ReplicatedLog\LogCache.h" />
+    <ClInclude Include="..\src\Framework\ReplicatedLog\LogQueue.h" />
+    <ClInclude Include="..\src\Framework\ReplicatedLog\ReplicatedConfig.h" />
+    <ClInclude Include="..\src\Framework\ReplicatedLog\ReplicatedDB.h" />
+    <ClInclude Include="..\src\Framework\ReplicatedLog\ReplicatedLog.h" />
+    <ClInclude Include="..\src\Framework\ReplicatedLog\ReplicatedLogMsg.h" />
+    <ClInclude Include="..\src\Framework\Transport\MessageConn.h" />
+    <ClInclude Include="..\src\Framework\Transport\TCPConn.h" />
+    <ClInclude Include="..\src\Framework\Transport\TCPServer.h" />
+    <ClInclude Include="..\src\Framework\Transport\Transport.h" />
+    <ClInclude Include="..\src\Framework\Transport\TransportTCPReader.h" />
+    <ClInclude Include="..\src\Framework\Transport\TransportTCPWriter.h" />
+    <ClInclude Include="..\src\Framework\Transport\TransportUDPReader.h" />
+    <ClInclude Include="..\src\Framework\Transport\TransportUDPWriter.h" />
+    <ClInclude Include="..\src\Framework\Paxos\PaxosAcceptor.h" />
+    <ClInclude Include="..\src\Framework\Paxos\PaxosLearner.h" />
+    <ClInclude Include="..\src\Framework\Paxos\PaxosMsg.h" />
+    <ClInclude Include="..\src\Framework\Paxos\PaxosProposer.h" />
+    <ClInclude Include="..\src\Framework\Paxos\PaxosState.h" />
+    <ClInclude Include="..\src\System\Buffer.h" />
+    <ClInclude Include="..\src\System\Common.h" />
+    <ClInclude Include="..\src\System\Config.h" />
+    <ClInclude Include="..\src\System\Log.h" />
+    <ClInclude Include="..\src\System\Platform.h" />
+    <ClInclude Include="..\src\System\Stopwatch.h" />
+    <ClInclude Include="..\src\System\ThreadPool.h" />
+    <ClInclude Include="..\src\System\Time.h" />
+    <ClInclude Include="..\src\System\Containers\LinkedList.h" />
+    <ClInclude Include="..\src\System\Containers\List.h" />
+    <ClInclude Include="..\src\System\Containers\Queue.h" />
+    <ClInclude Include="..\src\System\Containers\SortedList.h" />
+    <ClInclude Include="..\src\System\Events\Callable.h" />
+    <ClInclude Include="..\src\System\Events\EventLoop.h" />
+    <ClInclude Include="..\src\System\Events\Scheduler.h" />
+    <ClInclude Include="..\src\System\Events\Timer.h" />
+    <ClInclude Include="..\src\System\IO\Endpoint.h" />
+    <ClInclude Include="..\src\System\IO\FD.h" />
+    <ClInclude Include="..\src\System\IO\IOOperation.h" />
+    <ClInclude Include="..\src\System\IO\IOProcessor.h" />
+    <ClInclude Include="..\src\System\IO\Socket.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

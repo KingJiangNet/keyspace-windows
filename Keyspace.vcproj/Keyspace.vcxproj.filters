@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{43e84703-f424-43fe-bcb4-7e488dd0f5e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Application">
+      <UniqueIdentifier>{c16d8360-4d9d-4211-b883-c5342ad49d9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Application\Keyspace">
+      <UniqueIdentifier>{e0475f5f-02a5-4630-a175-8c973bdd4511}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Application\Keyspace\Catchup">
+      <UniqueIdentifier>{1e744b8c-2e72-4e05-aa8a-f765dcdd4818}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Application\Keyspace\Database">
+      <UniqueIdentifier>{ba2890f0-313b-4e39-8ae1-6d88441919a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Application\Keyspace\Protocol">
+      <UniqueIdentifier>{494a0ab0-e3b4-424b-a9d7-96e2f5588160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Application\Keyspace\Protocol\HTTP">
+      <UniqueIdentifier>{4620454f-8cac-4402-b75f-194e8d8fdbf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Application\Keyspace\Protocol\Keyspace">
+      <UniqueIdentifier>{f3281b4d-c481-43f5-9774-50bdba5a96ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Application\HTTP">
+      <UniqueIdentifier>{7955de29-c607-4154-be34-737fa93ccbe6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Framework">
+      <UniqueIdentifier>{bcfc5790-2462-411c-b94c-d179c1f5610f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Framework\AsyncDatabase">
+      <UniqueIdentifier>{961ad03a-7f68-46cd-ab6b-00afac39736c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Framework\Database">
+      <UniqueIdentifier>{f9c0c849-5daa-4bba-9438-4299474ce1b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Framework\PaxosLease">
+      <UniqueIdentifier>{646f51de-db00-4b36-bb80-193224415da1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Framework\ReplicatedLog">
+      <UniqueIdentifier>{0c0b8cf6-fe4f-4337-bf93-1e81118d0f19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Framework\Transport">
+      <UniqueIdentifier>{4f625d66-ef5a-4306-b663-023c1e2c5f15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Framework\Paxos">
+      <UniqueIdentifier>{c58904d7-1d73-40e8-9697-9e9a833c64af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\System">
+      <UniqueIdentifier>{dbfa3be2-c7c5-4a32-8396-9158a746419b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\System\Containers">
+      <UniqueIdentifier>{f8dbb2f4-4cb2-4069-9235-7ad279b4e13e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\System\Events">
+      <UniqueIdentifier>{a1bebd41-b451-4c38-a827-aacad8bf8871}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\System\IO">
+      <UniqueIdentifier>{2eb63209-cea0-4e4d-9f1d-ab1afd935972}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\Keyspace\Catchup\CatchupMsg.cpp">
+      <Filter>src\Application\Keyspace\Catchup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\Keyspace\Catchup\CatchupReader.cpp">
+      <Filter>src\Application\Keyspace\Catchup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\Keyspace\Catchup\CatchupServer.cpp">
+      <Filter>src\Application\Keyspace\Catchup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\Keyspace\Catchup\CatchupWriter.cpp">
+      <Filter>src\Application\Keyspace\Catchup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\Keyspace\Database\AsyncListVisitor.cpp">
+      <Filter>src\Application\Keyspace\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\Keyspace\Database\KeyspaceMsg.cpp">
+      <Filter>src\Application\Keyspace\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\Keyspace\Database\ReplicatedKeyspaceDB.cpp">
+      <Filter>src\Application\Keyspace\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\Keyspace\Database\SingleKeyspaceDB.cpp">
+      <Filter>src\Application\Keyspace\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\Keyspace\Database\SyncListVisitor.cpp">
+      <Filter>src\Application\Keyspace\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\Keyspace\Protocol\HTTP\HttpApiHandler.cpp">
+      <Filter>src\Application\Keyspace\Protocol\HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\Keyspace\Protocol\HTTP\HttpKeyspaceHandler.cpp">
+      <Filter>src\Application\Keyspace\Protocol\HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\Keyspace\Protocol\HTTP\HttpKeyspaceSession.cpp">
+      <Filter>src\Application\Keyspace\Protocol\HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\Keyspace\Protocol\Keyspace\KeyspaceClientReq.cpp">
+      <Filter>src\Application\Keyspace\Protocol\Keyspace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\Keyspace\Protocol\Keyspace\KeyspaceClientResp.cpp">
+      <Filter>src\Application\Keyspace\Protocol\Keyspace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\Keyspace\Protocol\Keyspace\KeyspaceConn.cpp">
+      <Filter>src\Application\Keyspace\Protocol\Keyspace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\Keyspace\Protocol\Keyspace\KeyspaceServer.cpp">
+      <Filter>src\Application\Keyspace\Protocol\Keyspace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\HTTP\HttpConn.cpp">
+      <Filter>src\Application\HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\HTTP\HttpFileHandler.cpp">
+      <Filter>src\Application\HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\HTTP\HttpRequest.cpp">
+      <Filter>src\Application\HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\HTTP\HttpServer.cpp">
+      <Filter>src\Application\HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\HTTP\IMF.cpp">
+      <Filter>src\Application\HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\HTTP\JSONSession.cpp">
+      <Filter>src\Application\HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\HTTP\Mime.cpp">
+      <Filter>src\Application\HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\HTTP\UrlParam.cpp">
+      <Filter>src\Application\HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\AsyncDatabase\AsyncDatabase.cpp">
+      <Filter>src\Framework\AsyncDatabase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\AsyncDatabase\MultiDatabaseOp.cpp">
+      <Filter>src\Framework\AsyncDatabase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\Database\Cursor.cpp">
+      <Filter>src\Framework\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\Database\Database.cpp">
+      <Filter>src\Framework\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\Database\Table.cpp">
+      <Filter>src\Framework\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\Database\Transaction.cpp">
+      <Filter>src\Framework\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\PaxosLease\PaxosLease.cpp">
+      <Filter>src\Framework\PaxosLease</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\PaxosLease\PLeaseAcceptor.cpp">
+      <Filter>src\Framework\PaxosLease</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\PaxosLease\PLeaseLearner.cpp">
+      <Filter>src\Framework\PaxosLease</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\PaxosLease\PLeaseMsg.cpp">
+      <Filter>src\Framework\PaxosLease</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\PaxosLease\PLeaseProposer.cpp">
+      <Filter>src\Framework\PaxosLease</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\ReplicatedLog\LogCache.cpp">
+      <Filter>src\Framework\ReplicatedLog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\ReplicatedLog\LogQueue.cpp">
+      <Filter>src\Framework\ReplicatedLog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\ReplicatedLog\ReplicatedConfig.cpp">
+      <Filter>src\Framework\ReplicatedLog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\ReplicatedLog\ReplicatedLog.cpp">
+      <Filter>src\Framework\ReplicatedLog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\ReplicatedLog\ReplicatedLogMsg.cpp">
+      <Filter>src\Framework\ReplicatedLog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\Transport\TCPServer.cpp">
+      <Filter>src\Framework\Transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\Transport\TransportTCPReader.cpp">
+      <Filter>src\Framework\Transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\Transport\TransportTCPWriter.cpp">
+      <Filter>src\Framework\Transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\Transport\TransportUDPReader.cpp">
+      <Filter>src\Framework\Transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\Transport\TransportUDPWriter.cpp">
+      <Filter>src\Framework\Transport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\Paxos\PaxosAcceptor.cpp">
+      <Filter>src\Framework\Paxos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\Paxos\PaxosLearner.cpp">
+      <Filter>src\Framework\Paxos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\Paxos\PaxosMsg.cpp">
+      <Filter>src\Framework\Paxos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Framework\Paxos\PaxosProposer.cpp">
+      <Filter>src\Framework\Paxos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\Common.cpp">
+      <Filter>src\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\Config.cpp">
+      <Filter>src\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\Log.cpp">
+      <Filter>src\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\Platform.cpp">
+      <Filter>src\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\ThreadPool_Posix.cpp">
+      <Filter>src\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\ThreadPool_Windows.cpp">
+      <Filter>src\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\Time_Posix.cpp">
+      <Filter>src\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\Time_Windows.cpp">
+      <Filter>src\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\Events\EventLoop.cpp">
+      <Filter>src\System\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\Events\Scheduler.cpp">
+      <Filter>src\System\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\IO\Endpoint.cpp">
+      <Filter>src\System\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\IO\IOProcessor_Darwin.cpp">
+      <Filter>src\System\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\IO\IOProcessor_Linux.cpp">
+      <Filter>src\System\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\IO\IOProcessor_Windows.cpp">
+      <Filter>src\System\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\IO\Socket_Posix.cpp">
+      <Filter>src\System\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\IO\Socket_Windows.cpp">
+      <Filter>src\System\IO</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Version.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Catchup\CatchupMsg.h">
+      <Filter>src\Application\Keyspace\Catchup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Catchup\CatchupReader.h">
+      <Filter>src\Application\Keyspace\Catchup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Catchup\CatchupServer.h">
+      <Filter>src\Application\Keyspace\Catchup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Catchup\CatchupWriter.h">
+      <Filter>src\Application\Keyspace\Catchup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Database\AsyncListVisitor.h">
+      <Filter>src\Application\Keyspace\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Database\KeyspaceConsts.h">
+      <Filter>src\Application\Keyspace\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Database\KeyspaceDB.h">
+      <Filter>src\Application\Keyspace\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Database\KeyspaceMsg.h">
+      <Filter>src\Application\Keyspace\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Database\KeyspaceService.h">
+      <Filter>src\Application\Keyspace\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Database\ReplicatedKeyspaceDB.h">
+      <Filter>src\Application\Keyspace\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Database\SingleKeyspaceDB.h">
+      <Filter>src\Application\Keyspace\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Database\SyncListVisitor.h">
+      <Filter>src\Application\Keyspace\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Protocol\ProtocolServer.h">
+      <Filter>src\Application\Keyspace\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Protocol\HTTP\HttpApiHandler.h">
+      <Filter>src\Application\Keyspace\Protocol\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Protocol\HTTP\HttpKeyspaceHandler.h">
+      <Filter>src\Application\Keyspace\Protocol\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Protocol\HTTP\HttpKeyspaceSession.h">
+      <Filter>src\Application\Keyspace\Protocol\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Protocol\Keyspace\KeyspaceClientReq.h">
+      <Filter>src\Application\Keyspace\Protocol\Keyspace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Protocol\Keyspace\KeyspaceClientResp.h">
+      <Filter>src\Application\Keyspace\Protocol\Keyspace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Protocol\Keyspace\KeyspaceConn.h">
+      <Filter>src\Application\Keyspace\Protocol\Keyspace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Protocol\Keyspace\KeyspaceServer.h">
+      <Filter>src\Application\Keyspace\Protocol\Keyspace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\HTTP\HttpConn.h">
+      <Filter>src\Application\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\HTTP\HttpConsts.h">
+      <Filter>src\Application\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\HTTP\HttpFileHandler.h">
+      <Filter>src\Application\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\HTTP\HttpRequest.h">
+      <Filter>src\Application\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\HTTP\HttpServer.h">
+      <Filter>src\Application\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\HTTP\IMF.h">
+      <Filter>src\Application\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\HTTP\JSONSession.h">
+      <Filter>src\Application\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\HTTP\Mime.h">
+      <Filter>src\Application\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\HTTP\UrlParam.h">
+      <Filter>src\Application\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\AsyncDatabase\AsyncDatabase.h">
+      <Filter>src\Framework\AsyncDatabase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\AsyncDatabase\MultiDatabaseOp.h">
+      <Filter>src\Framework\AsyncDatabase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\Database\Cursor.h">
+      <Filter>src\Framework\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\Database\Database.h">
+      <Filter>src\Framework\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\Database\DatabaseConfig.h">
+      <Filter>src\Framework\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\Database\Table.h">
+      <Filter>src\Framework\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\Database\Transaction.h">
+      <Filter>src\Framework\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\PaxosLease\PaxosLease.h">
+      <Filter>src\Framework\PaxosLease</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\PaxosLease\PLeaseAcceptor.h">
+      <Filter>src\Framework\PaxosLease</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\PaxosLease\PLeaseConsts.h">
+      <Filter>src\Framework\PaxosLease</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\PaxosLease\PLeaseLearner.h">
+      <Filter>src\Framework\PaxosLease</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\PaxosLease\PLeaseMsg.h">
+      <Filter>src\Framework\PaxosLease</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\PaxosLease\PLeaseProposer.h">
+      <Filter>src\Framework\PaxosLease</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\PaxosLease\PLeaseState.h">
+      <Filter>src\Framework\PaxosLease</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\ReplicatedLog\LogCache.h">
+      <Filter>src\Framework\ReplicatedLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\ReplicatedLog\LogQueue.h">
+      <Filter>src\Framework\ReplicatedLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\ReplicatedLog\ReplicatedConfig.h">
+      <Filter>src\Framework\ReplicatedLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\ReplicatedLog\ReplicatedDB.h">
+      <Filter>src\Framework\ReplicatedLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\ReplicatedLog\ReplicatedLog.h">
+      <Filter>src\Framework\ReplicatedLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\ReplicatedLog\ReplicatedLogMsg.h">
+      <Filter>src\Framework\ReplicatedLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\Transport\MessageConn.h">
+      <Filter>src\Framework\Transport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\Transport\TCPConn.h">
+      <Filter>src\Framework\Transport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\Transport\TCPServer.h">
+      <Filter>src\Framework\Transport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\Transport\Transport.h">
+      <Filter>src\Framework\Transport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\Transport\TransportTCPReader.h">
+      <Filter>src\Framework\Transport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\Transport\TransportTCPWriter.h">
+      <Filter>src\Framework\Transport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\Transport\TransportUDPReader.h">
+      <Filter>src\Framework\Transport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\Transport\TransportUDPWriter.h">
+      <Filter>src\Framework\Transport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\Paxos\PaxosAcceptor.h">
+      <Filter>src\Framework\Paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\Paxos\PaxosLearner.h">
+      <Filter>src\Framework\Paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\Paxos\PaxosMsg.h">
+      <Filter>src\Framework\Paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\Paxos\PaxosProposer.h">
+      <Filter>src\Framework\Paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Framework\Paxos\PaxosState.h">
+      <Filter>src\Framework\Paxos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Buffer.h">
+      <Filter>src\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Common.h">
+      <Filter>src\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Config.h">
+      <Filter>src\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Log.h">
+      <Filter>src\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Platform.h">
+      <Filter>src\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Stopwatch.h">
+      <Filter>src\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\ThreadPool.h">
+      <Filter>src\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Time.h">
+      <Filter>src\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Containers\LinkedList.h">
+      <Filter>src\System\Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Containers\List.h">
+      <Filter>src\System\Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Containers\Queue.h">
+      <Filter>src\System\Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Containers\SortedList.h">
+      <Filter>src\System\Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Events\Callable.h">
+      <Filter>src\System\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Events\EventLoop.h">
+      <Filter>src\System\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Events\Scheduler.h">
+      <Filter>src\System\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Events\Timer.h">
+      <Filter>src\System\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\IO\Endpoint.h">
+      <Filter>src\System\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\IO\FD.h">
+      <Filter>src\System\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\IO\IOOperation.h">
+      <Filter>src\System\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\IO\IOProcessor.h">
+      <Filter>src\System\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\IO\Socket.h">
+      <Filter>src\System\IO</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

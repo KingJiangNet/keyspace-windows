@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B1077A72-AA0E-49DA-861A-A337FF61AB90}</ProjectGuid>
+    <RootNamespace>KeyspaceClientLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\Build\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\Build\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">keyspace_clientd</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">keyspace_client</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;PLATFORM_WINDOWS;KEYSPACE_CLIENTLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)keyspace_clientd.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;PLATFORM_WINDOWS;KEYSPACE_CLIENTLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)keyspace_client.lib</OutputFile>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Application\Keyspace\Client\keyspace_client.cpp" />
+    <ClCompile Include="..\src\Application\Keyspace\Client\KeyspaceClient.cpp" />
+    <ClCompile Include="..\src\Application\Keyspace\Client\KeyspaceClientConn.cpp" />
+    <ClCompile Include="..\src\Application\Keyspace\Client\KeyspaceCommand.cpp" />
+    <ClCompile Include="..\src\Application\Keyspace\Client\KeyspaceResponse.cpp" />
+    <ClCompile Include="..\src\Application\Keyspace\Client\KeyspaceResult.cpp" />
+    <ClCompile Include="..\src\System\Common.cpp" />
+    <ClCompile Include="..\src\System\Config.cpp" />
+    <ClCompile Include="..\src\System\Log.cpp" />
+    <ClCompile Include="..\src\System\Platform.cpp" />
+    <ClCompile Include="..\src\System\Time_Posix.cpp" />
+    <ClCompile Include="..\src\System\Time_Windows.cpp" />
+    <ClCompile Include="..\src\System\IO\Endpoint.cpp" />
+    <ClCompile Include="..\src\System\IO\IOProcessor_Darwin.cpp" />
+    <ClCompile Include="..\src\System\IO\IOProcessor_Linux.cpp" />
+    <ClCompile Include="..\src\System\IO\IOProcessor_Windows.cpp" />
+    <ClCompile Include="..\src\System\IO\Socket_Posix.cpp" />
+    <ClCompile Include="..\src\System\IO\Socket_Windows.cpp" />
+    <ClCompile Include="..\src\System\Events\EventLoop.cpp" />
+    <ClCompile Include="..\src\System\Events\Scheduler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Application\Keyspace\Client\keyspace_client.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Client\KeyspaceClient.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Client\KeyspaceClientConn.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Client\KeyspaceClientConsts.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Client\KeyspaceCommand.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Client\KeyspaceResponse.h" />
+    <ClInclude Include="..\src\Application\Keyspace\Client\KeyspaceResult.h" />
+    <ClInclude Include="..\src\System\Buffer.h" />
+    <ClInclude Include="..\src\System\Common.h" />
+    <ClInclude Include="..\src\System\Config.h" />
+    <ClInclude Include="..\src\System\Log.h" />
+    <ClInclude Include="..\src\System\Platform.h" />
+    <ClInclude Include="..\src\System\Stopwatch.h" />
+    <ClInclude Include="..\src\System\Time.h" />
+    <ClInclude Include="..\src\System\IO\Endpoint.h" />
+    <ClInclude Include="..\src\System\IO\FD.h" />
+    <ClInclude Include="..\src\System\IO\IOOperation.h" />
+    <ClInclude Include="..\src\System\IO\IOProcessor.h" />
+    <ClInclude Include="..\src\System\IO\Socket.h" />
+    <ClInclude Include="..\src\System\Events\Callable.h" />
+    <ClInclude Include="..\src\System\Events\EventLoop.h" />
+    <ClInclude Include="..\src\System\Events\Scheduler.h" />
+    <ClInclude Include="..\src\System\Events\Timer.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

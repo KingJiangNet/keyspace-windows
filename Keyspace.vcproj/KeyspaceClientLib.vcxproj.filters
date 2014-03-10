@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Application">
+      <UniqueIdentifier>{4c58480e-ec81-4725-8a7b-b8df34a9b95a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Keyspace">
+      <UniqueIdentifier>{f6b1122c-7d5b-407a-b7e1-c66808cbba7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\Keyspace\Client">
+      <UniqueIdentifier>{11393d49-b341-4f57-8b36-7d8664a50234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{ecef71bb-4bc3-42c3-8c9e-67e7b09daac1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\IO">
+      <UniqueIdentifier>{fc614463-42fc-403c-bb35-bc86bc4fa579}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Events">
+      <UniqueIdentifier>{bb795c82-f4c9-4ac6-a7cf-5693719f38c0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Application\Keyspace\Client\keyspace_client.cpp">
+      <Filter>Application\Keyspace\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\Keyspace\Client\KeyspaceClient.cpp">
+      <Filter>Application\Keyspace\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\Keyspace\Client\KeyspaceClientConn.cpp">
+      <Filter>Application\Keyspace\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\Keyspace\Client\KeyspaceCommand.cpp">
+      <Filter>Application\Keyspace\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\Keyspace\Client\KeyspaceResponse.cpp">
+      <Filter>Application\Keyspace\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Application\Keyspace\Client\KeyspaceResult.cpp">
+      <Filter>Application\Keyspace\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\Common.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\Config.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\Log.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\Platform.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\Time_Posix.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\Time_Windows.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\IO\Endpoint.cpp">
+      <Filter>System\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\IO\IOProcessor_Darwin.cpp">
+      <Filter>System\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\IO\IOProcessor_Linux.cpp">
+      <Filter>System\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\IO\IOProcessor_Windows.cpp">
+      <Filter>System\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\IO\Socket_Posix.cpp">
+      <Filter>System\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\IO\Socket_Windows.cpp">
+      <Filter>System\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\Events\EventLoop.cpp">
+      <Filter>System\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\System\Events\Scheduler.cpp">
+      <Filter>System\Events</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Application\Keyspace\Client\keyspace_client.h">
+      <Filter>Application\Keyspace\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Client\KeyspaceClient.h">
+      <Filter>Application\Keyspace\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Client\KeyspaceClientConn.h">
+      <Filter>Application\Keyspace\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Client\KeyspaceClientConsts.h">
+      <Filter>Application\Keyspace\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Client\KeyspaceCommand.h">
+      <Filter>Application\Keyspace\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Client\KeyspaceResponse.h">
+      <Filter>Application\Keyspace\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Application\Keyspace\Client\KeyspaceResult.h">
+      <Filter>Application\Keyspace\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Buffer.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Common.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Config.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Log.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Platform.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Stopwatch.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Time.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\IO\Endpoint.h">
+      <Filter>System\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\IO\FD.h">
+      <Filter>System\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\IO\IOOperation.h">
+      <Filter>System\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\IO\IOProcessor.h">
+      <Filter>System\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\IO\Socket.h">
+      <Filter>System\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Events\Callable.h">
+      <Filter>System\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Events\EventLoop.h">
+      <Filter>System\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Events\Scheduler.h">
+      <Filter>System\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\System\Events\Timer.h">
+      <Filter>System\Events</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
