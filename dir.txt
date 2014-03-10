@@ -1,0 +1,10 @@
+ Volume in drive D has no label.
+ Volume Serial Number is F204-5185
+
+ Directory of D:\Sources\keyspacewindows
+
+10/Mar-14  03:28 PM    <DIR>          .
+10/Mar-14  03:28 PM    <DIR>          ..
+10/Mar-14  03:28 PM                 0 dir.txt
+               1 File(s)              0 bytes
+               2 Dir(s)   1,817,530,368 bytes free
